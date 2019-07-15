@@ -1,4 +1,9 @@
 node{
 stage('terraform')
+{
+sh 'terraform init'
+sh 'terraform plan'
+sh 'terraform apply'
 echo 'terraform'
+}
 }

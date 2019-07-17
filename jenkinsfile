@@ -3,7 +3,9 @@ stage('terraform')
 {
 sh 'terraform init'
 sh 'terraform plan'
-sh 'terraform apply'
+sh 'terraform apply -input=true'
 echo 'terraform'
 }
+
+  
 }

@@ -2,8 +2,8 @@ node{
 stage('terraform')
 {
 sh 'terraform init'
-sh 'terraform plan'
-sh 'terraform apply -input=true'
+sh 'terraform plan -out myplan'
+sh 'terraform apply -input=true myplan'
 echo 'terraform'
 }
 

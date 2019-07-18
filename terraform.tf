@@ -9,7 +9,7 @@ resource "aws_instance" "web" {
   instance_type = "t2.micro"
   key_name = "${var.key_name}"
   tags {
-    Name = "Terraform2"
+    Name = "Terraform3"
   }
   associate_public_ip_address = "true"
 
@@ -25,7 +25,7 @@ resource "aws_instance" "web" {
   }
 
   resource "aws_security_group" "allow_all" {
-  name        = "allow-all-sg1"
+  name        = "allow-all-sg3"
   vpc_id      = "vpc-082b50fbd323ec349"
 
   ingress {
